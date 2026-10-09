@@ -6,7 +6,7 @@ const path = require('path');
   const page = await browser.newPage({ viewport: { width: 390, height: 844 } });
   page.on('pageerror', e => errors.push('pageerror: ' + e.message));
   page.on('console', m => { if (m.type() === 'error') errors.push('console: ' + m.text()); });
-  const html = require('fs').readFileSync(path.resolve(__dirname, 'flight-lab-noarrow.html'), 'utf8');
+  const html = require('fs').readFileSync(path.resolve(__dirname, '../app/index-noarrow.html'), 'utf8');
   await page.setContent('<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"></head><body>' + html + '</body></html>');
   await page.waitForTimeout(300);
   const out = [];

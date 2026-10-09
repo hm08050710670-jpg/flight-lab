@@ -9,7 +9,7 @@
 - `mockups/guide-options.html` — UI案の比較ページ（検討用）
 - `assets/` — 使用画像の元ファイル（HTMLには埋め込み済み）
 - `tests/` — Playwright による動作確認スクリプト
-- `docs/spec-v1.txt` — 初期仕様書（現行との差分は CHANGELOG 参照）
+- `docs/spec-v1.txt` — 初期仕様書
 
 ## 動作確認
 
